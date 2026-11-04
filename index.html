@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clube do Livro: a proposta</title>
+<meta name="description" content="Um livro por mês e um mini-projeto para tirar ele da página. Três semanas no WhatsApp e um encontro presencial na quarta.">
+<meta name="theme-color" content="#FFE39A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gasoek+One&family=Bowlby+One&family=Chonburi&family=Gochi+Hand&family=Courier+Prime:wght@700&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="coracao" viewBox="0 0 24 24"><path d="M12 21.5C7 17 2 13.4 2.3 8.2 2.6 3.7 8.7 1.8 12 7c3-5.300 9.500-3.600 9.700 1.200.2 5-5 9-9.700 13.300Z"/></symbol>
+  <symbol id="brilho" viewBox="0 0 40 40"><path d="M20 1c1.500 12 6 17 19 19-13 2-17.500 7-19 19-1.500-12-6-17-19-19 13-2 17.500-7 19-19Z"/></symbol>
+</svg>
+
+<header class="topo">
+  <a class="marca" href="#inicio">Clube do Livro</a>
+  <nav class="pilulas" aria-label="Partes da apresentação">
+    <a href="#chato">A diferença</a>
+    <a href="#semanas">4 semanas</a>
+    <a href="#whatsapp">WhatsApp</a>
+    <a href="#encontro">Encontro</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contribuicao">Quanto custa</a>
+    <a href="#duvidas">Dúvidas</a>
+  </nav>
+  <a class="pilula-cta" href="#convite">Quero participar</a>
+</header>
+
+<main>
+
+  <!-- CAPA -->
+  <section class="capa" id="inicio" aria-labelledby="titulo">
+    <svg class="manchas" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true">
+      <path fill="#FFEDC4" d="M0 340C180 250 300 480 500 400S760 90 980 130s220 330 460 240V900H0Z"/>
+      <path fill="#FFD373" d="M0 620c200-90 340 70 540 0s300-290 520-220 200 240 380 170V900H0Z"/>
+      <path fill="#FF924E" d="M0 800c220-50 380 50 620 10s420-120 820-30V900H0Z"/>
+    </svg>
+    <div class="cena" id="livros-tras" aria-hidden="true"></div>
+
+    <div class="cartaz">
+      <p class="sobretitulo">Um livro por mês</p>
+      <h1 class="logo" id="titulo">
+        <span>Clube</span>
+        <em>do</em>
+        <span>Livro</span>
+        <svg class="brilhos" viewBox="0 0 100 100" aria-hidden="true">
+          <use href="#brilho" x="10" y="20" width="56" height="56"/>
+          <use href="#brilho" x="66" y="6" width="22" height="22"/>
+          <use href="#brilho" x="70" y="54" width="16" height="16"/>
+        </svg>
+      </h1>
+      <p class="chamada">Ler, fazer um projeto e mostrar ao vivo pra galera.</p>
+      <div class="acoes">
+        <a class="botao" href="#convite">Quero participar</a>
+        <a class="botao botao-leve" href="#ideia">Como assim?</a>
+      </div>
+    </div>
+
+    <div class="cena cena-frente" id="livros-frente" aria-hidden="true"></div>
+
+    <div class="margem margem-e" aria-hidden="true">
+      <div class="coracoes"><svg><use href="#coracao"/></svg><svg><use href="#coracao"/></svg><svg><use href="#coracao"/></svg><svg><use href="#coracao"/></svg></div>
+      <span>LER. FAZER. ENCONTRAR. REPETIR.</span>
+    </div>
+    <div class="margem margem-d" aria-hidden="true">
+      <span>LER. FAZER. ENCONTRAR. REPETIR.</span>
+      <div class="coracoes"><svg><use href="#coracao"/></svg><svg><use href="#coracao"/></svg><svg><use href="#coracao"/></svg><svg><use href="#coracao"/></svg></div>
+    </div>
+  </section>
+
+  <!-- A IDEIA: livros passando -->
+  <section class="painel p-branco ideia" id="ideia" aria-labelledby="t-ideia">
+    <div class="cena" id="livros-faixa" aria-hidden="true"></div>
+    <div class="ideia-texto">
+      <h2 id="t-ideia">Um livro por mês. Um projeto pra tirar ele da página.</h2>
+      <p class="grande">Três semanas de conversa no WhatsApp e, na quarta, todo mundo junto, ao vivo, mostrando o que fez.</p>
+    </div>
+  </section>
+
+  <!-- O CLUBE CHATO: papel amassado -->
+  <section class="painel p-claro chato" id="chato" aria-labelledby="t-chato">
+    <h2 id="t-chato">Você já viu esse clube por aí</h2>
+    <div class="palco" id="palco">
+      <canvas class="papel-tela" id="papel-tela" aria-hidden="true"></canvas>
+
+      <div class="oferta" id="oferta">
+        <svg class="brilhos-oferta" viewBox="0 0 100 100" aria-hidden="true">
+          <use href="#brilho" x="10" y="20" width="56" height="56"/>
+          <use href="#brilho" x="66" y="6" width="22" height="22"/>
+        </svg>
+        <h3>Aqui, cada leitura termina num projeto.</h3>
+        <p>Uma exposição, um jogo: o livro vira alguma coisa que dá pra ver e mostrar. No fim do mês, você leva pro encontro o que fez.</p>
+        <a class="botao" href="#projetos">Ver os projetos</a>
+        <button class="botao-texto" type="button" id="desamassar" hidden>Tirar o papel do lixo</button>
+      </div>
+
+      <button class="papel-alvo" type="button" id="papel-alvo">
+        <span class="visivel-so-leitor">Clube do livro padrão e chato: todo mundo lê o mesmo livro, metade não termina, alguém pergunta o que vocês acharam, silêncio constrangedor, mês que vem tudo de novo. Ative para amassar o papel e jogar no lixo.</span>
+      </button>
+
+      <p class="dica" id="dica" aria-hidden="true">
+        <svg viewBox="0 0 60 50"><path d="M4 8c20-6 40 4 46 32M40 32l10 9 5-13" fill="none" stroke="currentColor" stroke-width="3.500" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        segura e amassa isso aí
+      </p>
+
+      <svg class="lixeira" id="lixeira" viewBox="0 0 120 130" aria-hidden="true">
+        <path fill="#FF924E" stroke="#5B2508" stroke-width="5" stroke-linejoin="round" d="M12 22h96l-11 100a7 7 0 0 1-7 6H30a7 7 0 0 1-7-6Z"/>
+        <path fill="none" stroke="#5B2508" stroke-width="5" stroke-linecap="round" d="M42 46l4 62M60 46v62M78 46l-4 62"/>
+        <rect x="4" y="12" width="112" height="14" rx="7" fill="#FFF" stroke="#5B2508" stroke-width="5"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- PALAVRAS em ASCII -->
+  <section class="painel p-laranja palavras" id="palavras" aria-labelledby="t-palavras">
+    <canvas class="palavras-tela" id="palavras-tela" aria-hidden="true"></canvas>
+    <div class="palavras-rotulo">
+      <h2 id="t-palavras">Tudo isso cabe num mês</h2>
+      <p>Passa o dedo nas letras e bagunça tudo.</p>
+    </div>
+  </section>
+
+  <!-- AS 4 SEMANAS -->
+  <section class="painel p-amarelo semanas" id="semanas" aria-labelledby="t-semanas">
+    <h2 id="t-semanas">Quatro semanas, do começo ao fim</h2>
+    <p class="grande">Três no WhatsApp, a última ao vivo.</p>
+
+    <ol class="baralho" tabindex="0" aria-label="As quatro semanas do ciclo">
+      <li class="carta c1">
+        <span class="carta-num">Semana 1</span>
+        <svg class="carta-desenho" viewBox="0 0 200 130" aria-hidden="true">
+          <g stroke="#5B2508" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+            <path fill="#FFF" d="M100 36c-20-14-50-14-72-6v82c22-8 52-8 72 6 20-14 50-14 72-6V30c-22-8-52-8-72 6Z"/>
+            <path fill="none" d="M100 36v82M46 54c12-2 24-1 36 4M46 74c12-2 24-1 36 4"/>
+          </g>
+          <use href="#brilho" x="130" y="50" width="34" height="34" fill="#FF924E"/>
+        </svg>
+        <h3>A largada</h3>
+        <dl>
+          <dt>Leitura</dt><dd>Até cerca de 25% <span class="barra"><i style="width:25%"></i></span></dd>
+          <dt>Projeto</dt><dd>Escolha do projeto e lista de materiais</dd>
+          <dt>No grupo</dt><dd>Anúncio do livro e do projeto, pergunta de abertura</dd>
+        </dl>
+      </li>
+      <li class="carta c2">
+        <span class="carta-num">Semana 2</span>
+        <svg class="carta-desenho" viewBox="0 0 200 130" aria-hidden="true">
+          <g stroke="#5B2508" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+            <rect x="48" y="14" width="84" height="106" rx="7" fill="#FFF" transform="rotate(-6 90 67)"/>
+            <path fill="none" d="M66 44l48-6M68 62l32-4"/>
+            <circle cx="122" cy="76" r="26" fill="#FFE39A"/>
+            <path fill="none" stroke-width="9" d="M141 95l24 24"/>
+          </g>
+        </svg>
+        <h3>O check-in</h3>
+        <dl>
+          <dt>Leitura</dt><dd>Até cerca de 55% <span class="barra"><i style="width:55%"></i></span></dd>
+          <dt>Projeto</dt><dd>Pesquisa e rascunho</dd>
+          <dt>No grupo</dt><dd>Cada um manda uma frase e um trecho marcante</dd>
+        </dl>
+      </li>
+      <li class="carta c3">
+        <span class="carta-num">Semana 3</span>
+        <svg class="carta-desenho" viewBox="0 0 200 130" aria-hidden="true">
+          <g stroke="#5B2508" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+            <rect x="66" y="8" width="66" height="116" rx="12" fill="#FFF"/>
+            <path fill="#FF924E" d="M30 28h48v30H48l-12 12V58h-6Z"/>
+            <path fill="#FFE39A" d="M112 66h56v32h-8v12l-12-12h-36Z"/>
+          </g>
+        </svg>
+        <h3>A conversa</h3>
+        <dl>
+          <dt>Leitura</dt><dd>Até 100% <span class="barra"><i style="width:100%"></i></span></dd>
+          <dt>Projeto</dt><dd>Execução e entrega do rascunho</dd>
+          <dt>No grupo</dt><dd>Discussão em áudio ou chamada de grupo, de 60 minutos</dd>
+        </dl>
+      </li>
+      <li class="carta c4">
+        <span class="carta-num">Semana 4</span>
+        <svg class="carta-desenho" viewBox="0 0 200 130" aria-hidden="true">
+          <g stroke="#5B2508" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+            <circle cx="46" cy="44" r="19" fill="#FFF"/><circle cx="100" cy="34" r="19" fill="#FFE39A"/><circle cx="154" cy="44" r="19" fill="#FFF"/>
+            <path fill="#FF924E" d="M18 86c0-14 12-20 28-20s54-10 54-10 40 8 54 10 28 6 28 20v28H18Z"/>
+          </g>
+          <use href="#coracao" x="86" y="78" width="28" height="28" fill="#FFF"/>
+        </svg>
+        <h3>A chegada</h3>
+        <dl>
+          <dt>Leitura</dt><dd>Concluída <span class="barra"><i style="width:100%"></i></span></dd>
+          <dt>Projeto</dt><dd>Versão final</dd>
+          <dt>Ao vivo</dt><dd>Apresentações, discussão geral, votação do próximo livro e prestação de contas</dd>
+        </dl>
+      </li>
+    </ol>
+  </section>
+
+  <!-- WHATSAPP -->
+  <section class="painel p-branco zap" id="whatsapp" aria-labelledby="t-zap">
+    <h2 id="t-zap">Cada coisa no seu dia</h2>
+    <p class="grande">Ninguém precisa perguntar quando é.</p>
+    <div class="zap-mesa">
+      <ul class="bilhetes">
+        <li class="b1">Dá pra responder em até 48 horas</li>
+        <li class="b2">Fora do prazo entra, mas não trava o grupo</li>
+      </ul>
+      <div class="celular" id="celular" role="img" aria-label="Conversa de exemplo no grupo: segunda tem o anúncio da semana, quinta o check-in de leitura e projeto, sábado a chamada de discussão de 60 minutos.">
+        <div class="celular-topo">Clube do Livro</div>
+        <div class="balao"><b>Segunda</b>Anúncio da semana: o livro e o projeto.</div>
+        <div class="balao"><b>Quinta</b>Check-in: como vão a leitura e o projeto?</div>
+        <div class="balao"><b>Sábado</b>Chamada de discussão de 60 min, ou áudios.</div>
+      </div>
+      <ul class="bilhetes">
+        <li class="b3">Não gosta de escrever? Manda áudio</li>
+        <li class="b4">Cronograma e livro do mês num post fixado</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ENCONTRO -->
+  <section class="painel p-forte encontro" id="encontro" aria-labelledby="t-encontro">
+    <h2 id="t-encontro">Na quarta semana, todo mundo na mesma sala</h2>
+    <ol class="ingressos">
+      <li>Apresentação dos projetos</li>
+      <li>Discussão geral do livro</li>
+      <li>Votação do próximo livro</li>
+      <li>Prestação de contas</li>
+    </ol>
+  </section>
+
+  <!-- PROJETOS -->
+  <section class="painel p-amarelo projetos" id="projetos" aria-labelledby="t-projetos">
+    <h2 id="t-projetos">Três jeitos de fazer o projeto</h2>
+    <div class="pasta">
+      <div class="abas" role="tablist" aria-label="Formatos de projeto" data-abas>
+        <button class="aba" role="tab" type="button" id="aba-f1" aria-controls="f1" aria-selected="true">Individual</button>
+        <button class="aba" role="tab" type="button" id="aba-f2" aria-controls="f2" aria-selected="false" tabindex="-1">Em grupo</button>
+        <button class="aba" role="tab" type="button" id="aba-f3" aria-controls="f3" aria-selected="false" tabindex="-1">Misto</button>
+      </div>
+      <div class="folha-pasta" role="tabpanel" id="f1" aria-labelledby="aba-f1">
+        <p class="pasta-frase">Cada um escolhe o próprio projeto, compra os materiais e apresenta na semana 4.</p>
+        <p><b>No bolso:</b> a cota cobre o livro e uma parte comum. O projeto fica com quem fez.</p>
+        <p class="anotado">combinar um teto de gasto por pessoa, pra ninguém investir muito mais que os outros</p>
+      </div>
+      <div class="folha-pasta" role="tabpanel" id="f2" aria-labelledby="aba-f2">
+        <p class="pasta-frase">Um projeto só, com compra conjunta, como uma exposição ou um jogo.</p>
+        <p><b>No bolso:</b> a cota é dividida entre todos.</p>
+      </div>
+      <div class="folha-pasta" role="tabpanel" id="f3" aria-labelledby="aba-f3">
+        <p class="pasta-frase">Um projeto coletivo por livro, mais uma tarefa individual pequena.</p>
+        <p><b>No bolso:</b> equilíbrio entre as duas formas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTRIBUIÇÃO -->
+  <section class="painel p-branco custo" id="contribuicao" aria-labelledby="t-custo">
+    <h2 id="t-custo">A conta é aberta</h2>
+    <p class="grande">O valor muda a cada livro, então não tem mensalidade fixa. A cota sai na semana 1, junto com o anúncio do livro.</p>
+
+    <div class="custo-mesa">
+      <form class="campos" id="conta" onsubmit="return false">
+        <p class="anotado">faz a conta aí (são números de exemplo)</p>
+        <label>Livros de todo o grupo (R$)
+          <input id="c-livro" type="number" inputmode="decimal" min="0" step="1" value="300">
+        </label>
+        <label>Materiais do projeto (R$)
+          <input id="c-materiais" type="number" inputmode="decimal" min="0" step="1" value="120">
+        </label>
+        <label>Quantas pessoas
+          <input id="c-pessoas" type="number" inputmode="numeric" min="1" step="1" value="6">
+        </label>
+      </form>
+
+      <div class="notinha" aria-live="polite">
+        <p class="notinha-topo">Nota do ciclo</p>
+        <table>
+          <tr><td>Livros</td><td id="r-livro"></td></tr>
+          <tr><td>Materiais</td><td id="r-materiais"></td></tr>
+          <tr><td>Reserva (10%)</td><td id="r-reserva"></td></tr>
+          <tr><td>Total</td><td id="r-total"></td></tr>
+        </table>
+        <p class="notinha-cota">Sua cota, neste exemplo<strong id="r-cota"></strong></p>
+      </div>
+    </div>
+
+    <ul class="caixa">
+      <li><h3>Saiu mais barato?</h3>O saldo fica guardado no caixa.</li>
+      <li><h3>Saiu mais caro?</h3>O caixa cobre a diferença antes de qualquer pedido extra.</li>
+      <li><h3>E no fim do ano?</h3>O caixa também alimenta a festa, com o cashback da Shopee.</li>
+    </ul>
+  </section>
+
+  <!-- DÚVIDAS -->
+  <section class="painel p-claro duvidas" id="duvidas" aria-labelledby="t-duvidas">
+    <h2 id="t-duvidas">Mas e se…</h2>
+    <div class="lista-duvidas">
+      <details><summary>…eu não gostar de escrever?</summary><p>Mensagem de voz é bem-vinda, e a discussão pode ser em áudio ou por chamada.</p></details>
+      <details><summary>…eu me atrasar?</summary><p>Tem até 48 horas pra responder. Depois disso a mensagem ainda entra, só não trava o grupo.</p></details>
+      <details><summary>…eu não souber quanto vou gastar?</summary><p>A cota sai na semana 1, junto com o anúncio do livro: livro, materiais e uma reserva, divididos entre os participantes.</p></details>
+      <details><summary>…eu não curtir o livro escolhido?</summary><p>O próximo vai a voto no encontro presencial, e o seu voto conta.</p></details>
+      <details><summary>…eu me perder nas datas?</summary><p>Segunda é anúncio, quinta é check-in, sábado é discussão. O cronograma fica fixado no grupo.</p></details>
+    </div>
+  </section>
+
+  <!-- CONVITE -->
+  <section class="painel p-amarelo convite" id="convite" aria-labelledby="t-convite">
+    <div class="cena" id="livros-chuva" aria-hidden="true"></div>
+    <div class="convite-miolo">
+      <p class="vem" aria-hidden="true">VEM?</p>
+      <h2 id="t-convite">Tem um lugar guardado pra você</h2>
+      <p class="grande">Entra no grupo e o próximo livro já pode ter o seu voto.</p>
+      <button class="botao" type="button" id="entrar">Quero participar</button>
+      <p class="retorno" id="retorno" aria-live="polite"></p>
+    </div>
+  </section>
+</main>
+
+<script src="livros.js" defer></script>
+<script src="papel.js" defer></script>
+<script src="palavras.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>
